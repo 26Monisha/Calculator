@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Simple Calculator </title>
+		<link type="text\stylesheet" href="layout.css">
+	    <style>
+			table{
+                   border: 1px solid black;
+                }
+              button{
+	             width: 100%;
+                    }
+		</style>
+    </head>
+	<body>
+		<h2> Simple Calculator Using JavaScript </h2>
+		<div class = "calc_form">
+			<table >
+				<tr>
+					<td colspan="3"><input type="text" id="input"></td>
+					<td><button onclick="clean()">C</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="dis('1')">1</button></td>
+					<td><button onclick="dis('2')">2</button></td>
+					<td><button onclick="dis('3')">3</button></td>
+					<td><button onclick="dis('+')">+</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="dis('4')">4</button></td>
+					<td><button onclick="dis('5')">5</button></td>
+					<td><button onclick="dis('6')">6</button></td>
+					<td><button onclick="dis('-')">-</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="dis('7')">7</button></td>
+					<td><button onclick="dis('8')">8</button></td>
+					<td><button onclick="dis('9')">9</button></td>
+					<td><button onclick="dis('*')">*</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="dis('0')">0</button></td>
+					<td><button onclick="dis('.')">.</button></td>
+					<td><button onclick="dis('/')">/</button></td>
+					<td><button onclick="solve()">=</button></td>
+				</tr>
+			</table>
+		</div>
+		<script src="display.js"></script>
+	</body>
+</html>
